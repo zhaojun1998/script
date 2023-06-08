@@ -1,8 +1,13 @@
 #!/bin/env bash
 
-# origin url: https://github.com/lework/script
-# lework
-# Docker Hub mirror site speed test.
+## Author: lework
+## Usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/docker_hub_speed_test.sh | bash
+## Usage(China): curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
+## Github: https://github.com/lework/script
+## Function: Docker Hub mirror site speed test.
+
+set -e
+
 
 
 ######################################################################################################

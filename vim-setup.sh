@@ -1,11 +1,24 @@
 #!/bin/bash
 
-# usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/master/vim-setup.sh | bash
+## Author: ZhaoJun
+## Usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/vim-setup.sh | bash
+## Usage(China): curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/vim-setup.sh | bash
+## Github: https://github.com/zhaojun1998/script
+## Function: Setup vim
 
+set -e
 
-vimrc_path="$HOME/.vimrc"
+######################################################################################################
+# environment configuration
+######################################################################################################
 
-cat <<EOF >> "$vimrc_path"
+VIMRC_PATH="$HOME/.vimrc"
+
+######################################################################################################
+# main
+######################################################################################################
+
+cat <<EOF >> "$VIMRC_PATH"
 
 syntax on
 

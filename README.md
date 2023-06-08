@@ -13,16 +13,30 @@
       * [docker 镜像源](#docker-镜像源-1)
 <!--te-->
 
+## 系统初始化
+
+功能：一键修改系统镜像源, 安装 zsh, 配置 vim, 安装 docker，下面的参数都是可选的，可以根据自己的需求选择，不传递则全部执行。
+
+国外服务器：
+```bash
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/main.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+```
+
+国内服务器：
+```bash
+curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/main.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+```
+
 ## 镜像源
 
 ### 系统镜像源
 
 ```bash
-curl -sSL https://linuxmirrors.cn/main.sh | bash -s -- \
+curl -fsSL https://linuxmirrors.cn/main.sh | sudo -E bash -s -- \
   --source mirrors.tuna.tsinghua.edu.cn \
   --web-protocol http \
   --intranet false \
-  --install-epel true \
+  --install-epel false \
   --close-firewall false \
   --backup true \
   --updata-software true \
@@ -68,24 +82,25 @@ curl -sSL https://linuxmirrors.cn/main.sh | bash -s -- \
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/main/docker-install.sh | bash
+curl -fsSL https://get.docker.com/ | sudo -E sh
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/docker-install.sh | bash
+export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
+curl -fsSL https://get.docker.com/ | sudo -E sh
 ```
 
 ### oh-my-zsh
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/zsh-install.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
+curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
 ```
 
 ## 测速速度
@@ -94,22 +109,22 @@ curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/zsh-instal
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/docker_hub_speed_test.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
+curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
 ```
 
 ### docker 镜像源
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/os_repo_speed_test.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
+curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
 ```
