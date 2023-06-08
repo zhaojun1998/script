@@ -58,24 +58,24 @@ curl -sSL https://linuxmirrors.cn/main.sh | bash -s -- \
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/master/docker-install.sh | bash
+curl -sSL https://github.com/zhaojun1998/script/blob/main/docker-install.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/master/docker-install.sh | bash
+curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/docker-install.sh | bash
 ```
 
 ### oh-my-zsh
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/master/zsh-install.sh | bash
+curl -sSL https://github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/master/zsh-install.sh | bash
+curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
 ```
 
 ## 测速速度
@@ -84,22 +84,22 @@ curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/master/zsh-inst
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/master/test/docker_hub_speed_test.sh | bash
+curl -sSL https://github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/master/test/docker_hub_speed_test.sh | bash
+curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
 ```
 
 ### docker 镜像源
 
 国外服务器：
 ```bash
-curl -sSL https://github.com/zhaojun1998/script/blob/master/test/os_repo_speed_test.sh | bash
+curl -sSL https://github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/master/test/os_repo_speed_test.sh | bash
+curl -sSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
 ```
