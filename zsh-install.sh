@@ -68,7 +68,7 @@ install_dependency() {
     sudo apt update
     sudo apt install -y zsh git curl
   elif command -v yum >/dev/null 2>&1; then
-    sudo yum install -y update
+    sudo yum update -y
     sudo yum install -y zsh git curl
   fi
 }
