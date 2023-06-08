@@ -1,6 +1,7 @@
 name: Auto Markdown Toc
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ['README.md']
