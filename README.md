@@ -129,3 +129,14 @@ curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/os_rep
 ```bash
 curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
 ```
+
+
+## 常用软件
+
+### ncdu
+
+```bash
+curl -o ncdu-linux.tar.gz https://dev.yorhel.nl/download/ncdu-linux-x86_64-1.16.tar.gz
+tar -zxvf ncdu-linux.tar.gz
+sudo mv ncdu /usr/bin
+```
