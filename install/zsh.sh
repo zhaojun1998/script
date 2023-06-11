@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## Author: ZhaoJun
-## Usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/vim-setup.sh | bash
-## Usage(China): curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/vim-setup.sh | bash
+## Usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/install/zsh.sh | bash
+## Usage(China): curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
 ## Github: https://github.com/zhaojun1998/script
 ## Function: 一键安装 oh-my-zsh, 并配置好常用插件, 主题, 别名. 脚本可以重复执行, 会自动更新插件、别名，并安装配置脚本中新增的插件、别名
 

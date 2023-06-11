@@ -2,11 +2,11 @@
 
 ## Author: ZhaoJun
 ## Usage:
-#     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/main.sh | bash
-#     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/main.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+#     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash
+#     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
 
-#     curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/main.sh | bash
-#     curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/main.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+#     curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/init.sh | bash
+#     curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
 ## Github: https://github.com/zhaojun1998/script
 ## Function: 一键安装 zsh, vim, docker, 并且配置好 vim 和 zsh 的插件和主题, 一般用于新机器的初始化
 
@@ -52,9 +52,9 @@ change_mirror() {
 install_zsh() {
   echo -e "${GREEN}开始安装 zsh${PLAIN}"
   if [[ $is_china_ip -eq 1 ]]; then
-    curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
+    curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
   else
-    curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/zsh-install.sh | bash
+    curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/install/zsh.sh | bash
   fi
 }
 

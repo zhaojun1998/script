@@ -22,12 +22,12 @@
 
 国外服务器：
 ```bash
-curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/main.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
 ```
 
 国内服务器：
 ```bash
-curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/main.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
 ```
 
 ## 镜像源
@@ -98,12 +98,12 @@ curl -fsSL https://get.docker.com/ | sudo -E sh
 
 国外服务器：
 ```bash
-curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/zsh-install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/install/zsh.sh | bash
 ```
 
 国内服务器：
 ```bash
-curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/zsh-install.sh | bash
+curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
 ```
 
 ## 测速速度
