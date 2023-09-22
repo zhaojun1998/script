@@ -30,9 +30,11 @@ PLUGINS=(
   z
   git
   docker
+  docker-compose
   sudo
   extract
   jsontools
+  kubectl
   colored-man-pages
 )
 
@@ -41,8 +43,7 @@ alias_list=(
     "alias ll='ls -alFh'"
     "alias la='ls -A'"
     "alias l='ls -CF'"
-    "alias dkc='docker-compose'"
-    "alias dk='docker'"
+     "alias dk='docker'"
 )
 
 # 判断当前机器的 ip 地址是否是国内, 备用选项: cip.cc
