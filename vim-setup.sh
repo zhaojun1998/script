@@ -28,6 +28,7 @@ set autoindent
 set hlsearch
 set smartcase
 set showmatch
+set mouse-=a
 
 EOF
 
