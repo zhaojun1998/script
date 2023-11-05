@@ -43,7 +43,11 @@ alias_list=(
     "alias ll='ls -alFh'"
     "alias la='ls -A'"
     "alias l='ls -CF'"
-     "alias dk='docker'"
+    "alias dk='docker'"
+    "alias dkc='docker compose'"
+    "alias dkr='docker compose down && docker compose up -d'"
+    "alias dkpr='docker compose down && docker compose up -d --pull'"
+    "alias dkrl='docker compose down && docker compose up -d && docker compose logs -f --tail=100'"
 )
 
 # 判断当前机器的 ip 地址是否是国内, 备用选项: cip.cc
