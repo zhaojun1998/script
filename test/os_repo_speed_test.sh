@@ -2,7 +2,7 @@
 
 ## Author: lework
 ## Usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/os_repo_speed_test.sh | bash
-## Usage(China): curl -fsSL https://gh.zhaojun.im.com/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
+## Usage(China): curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
 ## Github: https://github.com/lework/script
 ## Function: Os repo mirror site speed test.
 

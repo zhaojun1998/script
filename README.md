@@ -12,8 +12,6 @@
    * [测速速度](#测速速度)
       * [系统镜像源](#系统镜像源-1)
       * [docker 镜像源](#docker-镜像源-1)
-   * [常用软件](#常用软件)
-      * [ncdu](#ncdu)
 <!--te-->
 
 ## 系统初始化
@@ -22,12 +20,19 @@
 
 国外服务器：
 ```bash
-curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- \
+    --install-zsh \
+    --setup-vim \
+    --install-docker
 ```
 
 国内服务器：
 ```bash
-curl -fsSL https://gh.zhaojun.im.com/github.com/zhaojun1998/script/blob/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+curl -fsSL https://gh.zhaojun.im/https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- \
+    --change-mirror \
+    --install-zsh \
+    --setup-vim \
+    --install-docker
 ```
 
 ## 镜像源
@@ -103,7 +108,7 @@ curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/install/zsh
 
 国内服务器：
 ```bash
-curl -fsSL https://gh.zhaojun.im.com/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
+curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
 ```
 
 ## 测速速度
@@ -117,7 +122,7 @@ curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/docker
 
 国内服务器：
 ```bash
-curl -fsSL https://gh.zhaojun.im.com/github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
+curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/test/docker_hub_speed_test.sh | bash
 ```
 
 ### docker 镜像源
@@ -129,16 +134,5 @@ curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/test/os_rep
 
 国内服务器：
 ```bash
-curl -fsSL https://gh.zhaojun.im.com/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
-```
-
-
-## 常用软件
-
-### ncdu
-
-```bash
-curl -o ncdu-linux.tar.gz https://dev.yorhel.nl/download/ncdu-linux-x86_64-1.16.tar.gz
-tar -zxvf ncdu-linux.tar.gz
-sudo mv ncdu /usr/bin
+curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/test/os_repo_speed_test.sh | bash
 ```
