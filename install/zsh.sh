@@ -2,7 +2,7 @@
 
 ## Author: ZhaoJun
 ## Usage: curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/install/zsh.sh | bash
-## Usage(China): curl -fsSL https://ghproxy.com/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
+## Usage(China): curl -fsSL https://gh.zhaojun.im.com/github.com/zhaojun1998/script/blob/main/install/zsh.sh | bash
 ## Github: https://github.com/zhaojun1998/script
 ## Function: 一键安装 oh-my-zsh, 并配置好常用插件, 主题, 别名. 脚本可以重复执行, 会自动更新插件、别名，并安装配置脚本中新增的插件、别名
 
@@ -48,7 +48,7 @@ alias_list=(
 
 # 判断当前机器的 ip 地址是否是国内, 备用选项: cip.cc
 IS_CHINA_IP=$(curl -sSL http://myip.ipip.net | grep '中国' | wc -l | tr -d "[:space:]" )
-GITHUB_PROXY=$(if [ $IS_CHINA_IP -eq 1 ]; then echo "https://ghproxy.com/"; fi)
+GITHUB_PROXY=$(if [ $IS_CHINA_IP -eq 1 ]; then echo "https://gh.zhaojun.im.com/"; fi)
 
 ######################################################################################################
 # function
