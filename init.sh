@@ -3,12 +3,12 @@
 ## Author: ZhaoJun
 ## Usage:
 #     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash
-#     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+#     curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker --setup-ssh-key '-og zhaojun1998 -d -p 2233'
 
 #     curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/init.sh | bash
-#     curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker
+#     curl -fsSL https://gh.zhaojun.im/github.com/zhaojun1998/script/blob/main/init.sh | bash -s -- --change-mirror --install-zsh --setup-vim --install-docker --setup-ssh-key '-og zhaojun1998 -d -p 2233'
 ## Github: https://github.com/zhaojun1998/script
-## Function: 一键安装 zsh, vim, docker, 并且配置好 vim 和 zsh 的插件和主题, 一般用于新机器的初始化
+## Function: 一键安装 zsh, vim, docker, 并且配置好 vim 和 zsh 的插件和主题, 从 GitHub 获取用户公钥并设置禁止密码登录，一般用于新机器的初始化
 
 set -e
 
@@ -75,6 +75,17 @@ install_docker() {
   curl -fsSL https://get.docker.com/ | sudo -E sh
 }
 
+setup_ssh_key() {
+  echo -e "${GREEN}开始配置 ssh key${PLAIN}"
+  if [[ $is_china_ip -eq 1 ]]; then
+    bash <(curl -fsSL gh.zhaojun.im/git.io/key.sh \
+     | sed 's#https://github.com#https://gh.zhaojun.im/https://github.com#g') \
+     $@
+  else
+    bash <(curl -fsSL git.io/key.sh) "$@"
+  fi
+}
+
 ######################################################################################################
 # main
 ######################################################################################################
@@ -113,6 +124,11 @@ else
       ;;
     --install-docker)
       install_docker
+      ;;
+    --setup-ssh-key)
+      # 获取 --setup-ssh-key 后面的参数, 格式: --setup-ssh-key -og zhaojun1998 -d -p 2233  然后传给 setup_ssh_key 函数
+      shift
+      setup_ssh_key "$@"
       ;;
     *)
       echo -e "${RED}Error: unknown option $1.${PLAIN}"

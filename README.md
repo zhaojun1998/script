@@ -6,14 +6,15 @@
 
 ## 系统初始化
 
-功能：一键修改系统镜像源, 安装 zsh, 配置 vim, 安装 docker，下面的参数都是可选的，可以根据自己的需求选择，不传递则全部执行。
+功能：一键修改系统镜像源, 安装 zsh, 配置 vim, 安装 docker，配置 ssh 免密登录(从 github 用户下获取，下面是我的，请修改)并修改端口号，下面的参数都是可选的，可以根据自己的需求选择，不传递则全部执行。
 
 国外服务器：
 ```bash
 curl -fsSL https://raw.githubusercontent.com/zhaojun1998/script/main/init.sh | bash -s -- \
     --install-zsh \
     --setup-vim \
-    --install-docker
+    --install-docker \
+    --setup-ssh-key '-og zhaojun1998 -d -p 2233'
 ```
 
 国内服务器：
@@ -22,7 +23,8 @@ curl -fsSL https://gh.zhaojun.im/https://raw.githubusercontent.com/zhaojun1998/s
     --change-mirror \
     --install-zsh \
     --setup-vim \
-    --install-docker
+    --install-docker \
+    --setup-ssh-key '-og zhaojun1998 -d -p 2233'
 ```
 
 ## 镜像源
