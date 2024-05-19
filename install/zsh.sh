@@ -43,11 +43,6 @@ alias_list=(
     "alias ll='ls -alFh'"
     "alias la='ls -A'"
     "alias l='ls -CF'"
-    "alias dk='docker'"
-    "alias dkc='docker compose'"
-    "alias dkr='docker compose down && docker compose up -d'"
-    "alias dkpr='docker compose down && docker compose up -d --pull'"
-    "alias dkrl='docker compose down && docker compose up -d && docker compose logs -f --tail=100'"
 )
 
 # 判断当前机器的 ip 地址是否是国内, 备用选项: cip.cc
@@ -138,6 +133,7 @@ install_zsh
 install_or_upgrade_zsh_plugin ${GITHUB_PROXY}https://github.com/zsh-users/zsh-syntax-highlighting.git && PLUGINS+=('zsh-syntax-highlighting')
 install_or_upgrade_zsh_plugin ${GITHUB_PROXY}https://github.com/zsh-users/zsh-autosuggestions && PLUGINS+=('zsh-autosuggestions')
 install_or_upgrade_zsh_plugin ${GITHUB_PROXY}https://github.com/zsh-users/zsh-history-substring-search && PLUGINS+=('zsh-history-substring-search')
+install_or_upgrade_zsh_plugin ${GITHUB_PROXY}https://github.com/akarzim/zsh-docker-aliases && PLUGINS+=('zsh-docker-aliases')
 
 # 调用 install_or_upgrade_zsh_plugin 函数，并根据返回值判断是否要执行命令
 if install_or_upgrade_zsh_plugin ${GITHUB_PROXY}https://github.com/zsh-users/zsh-completions | grep -q '^1$'; then
