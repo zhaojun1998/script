@@ -71,8 +71,10 @@ install_docker() {
   echo -e "${GREEN}开始安装 docker${PLAIN}"
   if [[ $is_china_ip -eq 1 ]]; then
     export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
+    curl -fsSL https://get.docker.com/ | sudo -E sh
+  else
+    curl -fsSL https://gh.zhaojun.im/https://get.docker.com/ | sudo -E sh
   fi
-  curl -fsSL https://get.docker.com/ | sudo -E sh
 }
 
 setup_ssh_key() {
