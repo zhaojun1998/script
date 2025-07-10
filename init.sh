@@ -42,7 +42,6 @@ change_mirror() {
     --web-protocol http \
     --intranet false \
     --install-epel false \
-    --close-firewall false \
     --backup true \
     --updata-software false \
     --clean-cache false \
